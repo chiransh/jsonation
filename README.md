@@ -13,7 +13,7 @@ For the "M" (map) data type, we will iterate over the map items and follow the t
 
 Finally, we will output the transformed JSON object to stdout.
 
-This implementation defines few helper functions:
+# This implementation defines few helper functions:
 
 sanitize_string: takes a string argument and returns a sanitized version of the string with leading and trailing whitespace removed.
 load_input_data: This method reads in the JSON file specified by input_path and returns its contents as a Python dictionary. If the JSON is malformed or cannot be read, it returns None.
@@ -30,12 +30,12 @@ transform_value: This recursively transforms it based on its type. If val is a l
 
 
 
-Usage -
+# Usage -
 To use the JsonTransformer class, you can create an instance of the class by specifying the input data file path as an argument.
 input_path = 'sample1.json'
 
 JsonTransformer(input_path).transform()
 
 
-Installation - 
+# Installation - 
 To use this code, you must have Python 3 installed on your system. You will also need to install the dateutil library, which can be installed using pip
